@@ -16,7 +16,7 @@ def main():
     print(f"Quantidade de bagagens:    {quant_bagagem}")
     print(f"Peso dos passageiros:      {peso_passageiros}kg")
     print(f"Peso da carga:             {peso_conteiners}kg")
-    print(f"Quantidade de combustível: {quant_combustivel//1}L")
+    print(f"Quantidade de combustível: {quant_combustivel:.0f}L")
     print(f"Liberado para decolagem:   {pode_decolar}")
 
 
