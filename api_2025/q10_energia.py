@@ -21,7 +21,7 @@ def main():
 
         if comando == 1:
             nome = obter_texto_minimo_e_maximo('Digite seu nome: ')
-            consumo = obter_inteiro('Digite seu consumo mensal: ')
+            consumo = obter_inteiro_positivo('Digite seu consumo mensal: ')
             print(bandeiras)
             bandeira = obter_inteiro_intervalo('Digite o número da bandeira: ', 1, 4)
 
