@@ -63,6 +63,19 @@ def obter_inteiro_intervalo(conteudo, limite_inferior, limite_superior):
             print(f"Valor inválido. Isso não é um número inteiro do intervalo [{limite_inferior}, {limite_superior}]")
 
 
+def obter_real_intervalo(conteudo, limite_inferior, limite_superior):
+    while True:
+        try:
+            inteiro = obter_real(conteudo)
+
+            if inteiro >= limite_inferior and inteiro <= limite_superior:
+                return inteiro
+            
+            erro = 1 / 0
+        except:
+            print(f"Valor inválido. Isso não é um número inteiro do intervalo [{limite_inferior}, {limite_superior}]")
+
+
 def obter_real(conteudo):
     while True:
         try:
