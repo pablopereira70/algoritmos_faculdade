@@ -49,7 +49,6 @@ def obter_melhor(p1, p2, p3):
         melhor = 'Milhas padrão'
 
     if p3 < menor:
-        menor = p3
         melhor = 'Milhas baratas'
 
     return melhor
