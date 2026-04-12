@@ -40,9 +40,9 @@ def main():
 
             print(f'''
 ----- INFORMAÇÕES -----
-Semanas:           {semanas}
-Minutos transport: {tempo_transport}
-Minutos escadas:   {tempo_escada}
+Semanas necessárias:  {semanas}
+Minutos de transport: {tempo_transport}
+Minutos de escada:   {tempo_escada}
 ----------------------- ''')
         else:
             break
