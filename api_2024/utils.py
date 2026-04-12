@@ -66,10 +66,10 @@ def obter_inteiro_intervalo(conteudo, limite_inferior, limite_superior):
 def obter_real_intervalo(conteudo, limite_inferior, limite_superior):
     while True:
         try:
-            inteiro = obter_real(conteudo)
+            real = obter_real(conteudo)
 
-            if inteiro >= limite_inferior and inteiro <= limite_superior:
-                return inteiro
+            if real >= limite_inferior and real <= limite_superior:
+                return real
             
             erro = 1 / 0
         except:
@@ -116,22 +116,6 @@ def obter_real_maximo(conteudo, limite_superior):
             erro = 1 / 0
         except:
              print(f"Valor inválido. Isso não é um número real maior ou igual a {limite_superior}")
-
-
-def obter_inteiro_intervalo(conteudo, limite_inferior, limite_superior):
-    while True:
-        try:
-            inteiro = obter_real(conteudo)
-
-            if inteiro >= limite_inferior and inteiro <= limite_superior:
-                return inteiro
-            
-            erro = 1 / 0
-        except:
-            print(f"Valor inválido. Isso não é um número real do intervalo [{limite_inferior}, {limite_superior}]")
-def obter_texto(conteudo):
-    return input(conteudo)
-
 
 def obter_texto_minimo_e_maximo(conteudo,min = 0, max = 999):
     while True:
