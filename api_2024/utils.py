@@ -73,7 +73,7 @@ def obter_real_intervalo(conteudo, limite_inferior, limite_superior):
             
             erro = 1 / 0
         except:
-            print(f"Valor inválido. Isso não é um número inteiro do intervalo [{limite_inferior}, {limite_superior}]")
+            print(f"Valor inválido. Isso não é um número real do intervalo [{limite_inferior}, {limite_superior}]")
 
 
 def obter_real(conteudo):
