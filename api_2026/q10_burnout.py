@@ -18,7 +18,6 @@ def main():
             dimensao_exaustao_emocional, dimensao_despersonalizacao, dimensao_realizacao_pessoal = classificar_dimensao(score_exaustao_emocional, score_despersonalizacao, score_realizacao_pessoal)
             exibir_laudo(nome, score_exaustao_emocional, score_despersonalizacao, score_realizacao_pessoal, dimensao_exaustao_emocional, dimensao_despersonalizacao, dimensao_realizacao_pessoal)
             soma_geral_burnout += score_exaustao_emocional + score_despersonalizacao
-            respondentes += 1
             maior_exaustao_emocional, nome_maior_exaustao_emocional = atualizar_maior_exaustao_emocional(maior_exaustao_emocional, nome_maior_exaustao_emocional, score_exaustao_emocional, nome)
             menor_realizacao_pessoal, nome_menor_realizacao_pessoal = atualizar_menor_realizacao_pessoal(menor_realizacao_pessoal, nome_menor_realizacao_pessoal, score_realizacao_pessoal, nome)
         else:
